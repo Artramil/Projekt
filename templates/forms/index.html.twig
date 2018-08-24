@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+        {% block title %}Contact form{% endblock %}
+
+        {% block body %}
+
+    <section class="container">
+
+        {{ form_start(out_form) }}
+        {{ form_widget(out_form) }}
+        {{ form_end(out_form) }}
+
+        <input type="submit" value="Submit" class="btn btn-success">
+
+    </section>
+
+        {% endblock %}
